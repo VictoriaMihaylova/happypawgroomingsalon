@@ -1,0 +1,212 @@
+body {
+    font-family: "Sitka", sans-serif;
+    height: 100%;
+    font-size: 18px;
+    background-color: #fffbfa;
+    color: #2d2d2d;
+    font-weight: 400;
+}
+.navbar {
+    border-radius: 10px;
+    background-color: #ffe3cd;
+}
+/*.navbar .nav-link {
+    color: #d23f4e; 
+}*/
+.navbar .nav-link:hover {
+    font-weight: 600;
+}
+.navbar .nav-link.active {
+/*    color: #d23f4e;*/
+    font-weight: 600;
+    background-color: transparent;
+}
+.navbar-collapse {
+    text-align: right;
+    gap: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+/*.logo-font {
+    font-size: 16px;
+    color: #ff5933;
+    font-style: italic;
+}*/
+.c-bg {
+    background-color: #ffe3cd;
+/*    background-color: #f2dcdd;*/
+}
+.container-fluid {
+    width: 95%;
+}
+/*@media (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 993px) {
+  .container {
+    width: 90%;
+  }
+}*/
+/*.c-container {
+    padding: 0 40%;
+}*/
+.c-line {
+    width: 40%;
+    height: 2px;
+    background-color: #e95b52;
+    border: none;
+    opacity: 1;
+}
+h2 {
+    font-size: 48px;
+    font-weight: 600;
+}
+h3 {
+    font-size: 32px;
+    font-weight: 400;
+}
+.btn-booking {
+/*    background-color: #d23f4e;*/
+    background-color: #e95b52;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+}
+.btn-booking:hover {
+    background-color: #fffbfa;
+    color: #2d2d2d;
+    border-color: #e95b52;
+    border-width: 2px;
+}
+.btn-profile {
+    background-color: #e95b52;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.btn-profile:hover {
+    background-color: #fffbfa;
+    color: #2d2d2d;
+    border-color: #e95b52;
+    border-width: 2px;
+}
+.c-card {
+    border-radius: 10px;
+    border: solid #e95b52 2px;
+    border-bottom: solid #e95b52 4px;
+    border-right: solid #e95b52 4px;
+}
+.social {
+    text-decoration: none;
+    color: inherit;
+}
+.image-hover img {
+    transition: transform 0.5s ease-in-out;
+}
+.image-hover:hover img {
+    transform: scale(1.1);
+}
+.c-font {
+    font-size: 16px;
+}
+.c-form input:focus {
+    border-color: #e95b52;
+    outline-color: #e95b52;
+    box-shadow: 0 0 2px 2px rgba(233, 91, 82, 0.5);
+}
+.c-form textarea:focus {
+    border-color: #e95b52;
+    outline-color: #e95b52;
+    box-shadow: 0 0 2px 2px rgba(233, 91, 82, 0.5);
+}
+.c-form input::placeholder {
+    font-size: 0.9rem;
+    color: #d3d3d3;
+}
+.c-form textarea::placeholder {
+    font-size: 0.9rem; 
+    color: #d3d3d3;
+}
+.c-font-clr {
+    color: #faedef
+}
+.c-font-sz {
+    font-size: 16px;
+}
+.c-table, .c-table td, .c-table th {
+    background-color: transparent !important;
+    color: #faedef;
+}
+.c-table-2 td, .c-table-2 th {
+    background-color: transparent !important;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #e95b52;
+    border-top: 2px solid #e95b52;
+}
+.c-table-2 {
+    border-collapse: collapse;
+}
+@media (max-width: 992px) {
+  .c-table-2 {
+    max-width: 100%;
+    }
+}
+@media (min-width: 993px) {
+  .c-table-2 {
+    max-width: 60%;
+    }
+}
+.footer {
+    background-color: whitesmoke;
+}
+.modal-content {
+    font-size: 16px;
+}
+.modal-header {
+    border-bottom: none;
+    color: #2d2d2d;
+    background-color: #fffbfa;
+}
+.modal-body {
+    background-color: #fffbfa;
+}
+.btn-login {
+/*    background-color: #d23f4e;*/
+    background-color: #e95b52;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 6px 15px;
+    text-align: center;
+}
+.btn-login:hover {
+    background-color: #fffbfa;
+    color: #2d2d2d;
+    border-color: #e95b52;
+    border-width: 2px;
+}
+.form-check-input:checked {
+    background-color: #e95b52; 
+    border-color: #e95b52;
+}
+.profile-card {
+    border-radius: 10px;
+    border: solid #e95b52 1px;
+}
+.nav-pills .nav-link{
+    color: #2d2d2d;
+}
+.nav-pills .nav-link.active {
+    background-color: #e95b52 !important;
+    color: white !important;
+    font-weight: 600;
+    border-color: orange !important;
+}
+.nav-pills {
+    flex-direction: column;
+    justify-content: space-around;
+}

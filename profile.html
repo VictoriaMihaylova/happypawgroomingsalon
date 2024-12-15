@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet grooming salon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand m-0 p-0" href="index.html">
+                    <img src="images/logo2.png" alt="Logo" width="122" height="42" class="d-inline-block align-text-center">
+                </a>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-md-center" id="navbarNav">
+                    <ul class="navbar-nav mx-auto p-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Начало</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">За нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Контакти</a>
+                        </li>
+                    </ul>
+                    <a class="nav-link pe-1 mt-sm-3 mt-lg-0" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        Вход
+                    </a>
+                    <a class="nav-link d-none d-lg-block" href="/">/</a>
+                    <a class="nav-link ps-1" href="profile.html">Профил</a>
+                </div>
+            </div>
+        </nav>
+    
+        <div class="row my-5 justify-content-center">
+            <div class="col-lg-3">
+                <div class="card profile-card p-3 mb-3">
+                    <div class="col-12 col-lg-auto text-center">
+                        <img src="images/profiles/profile1.jpg" class="m-0" alt="Client 1" style="width: 120px; height: 120px; object-fit: cover; border-radius: 10px;">
+                    </div>
+                    <div class="col-12 col-lg text-center">
+                        <h3>Алина Петрова</h3>
+                        <div>@alina.petrova</div>
+                        <button type="button" class="btn btn-profile btn-sm mt-3">Смени снимка</button>
+                    </div>
+                </div>
+                <div class="card profile-card">
+                    <div class="d-flex align-items-start">
+                        <div class="nav nav-pills w-100 p-lg-3 m-sm-1 m-lg-0" id="v-pills-tab" role="tablist" aria-orientation="horizontal">
+                            <button class="nav-link active text-start" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="true">
+                                <i class="fa fa-user fa-fw me-2"></i> Лични данни
+                            </button>
+                            <button class="nav-link text-start" id="v-pills-pet-tab" data-bs-toggle="pill" data-bs-target="#v-pills-pet" type="button" role="tab" aria-controls="v-pills-pet" aria-selected="false">
+                                <i class="fa fa-paw fa-fw me-2"></i> Вашият любимец
+                            </button>
+                            <button class="nav-link text-start" id="v-pills-security-tab" data-bs-toggle="pill" data-bs-target="#v-pills-security" type="button" role="tab" aria-controls="v-pills-security" aria-selected="false">
+                                <i class="fa fa-shield fa-fw me-2"></i> Сигурност
+                            </button>
+                            <button class="nav-link text-start" id="v-pills-billing-tab" data-bs-toggle="pill" data-bs-target="#v-pills-billing" type="button" role="tab" aria-controls="v-pills-billing" aria-selected="false">
+                                <i class="fa fa-credit-card fa-fw me-2"></i> Карти
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="card profile-card mt-2 m-lg-0">
+                    <div class="d-flex align-items-start">
+                        <div class="tab-content p-3 rounded flex-grow-1" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                                <form class="c-form">
+                                    <div class="row px-3 gy-3">
+                                        <span class="fw-bold px-3 text-center text-md-start">ЛИЧНИ ДАННИ</span>
+                                        <hr class="mb-4">
+                                        <div class="col-12 col-md-6">
+                                            <label for="username" class="form-label">Потребител</label>
+                                            <input type="text" class="form-control" id="username" name="username" value="alina.petrova" disabled>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <label for="email" class="form-label">Електронна поща</label>
+                                            <input type="email" class="form-control" id="email" name="email" value="user@example.com" disabled>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <label for="first-name" class="form-label">Име</label>
+                                            <input type="text" class="form-control" id="first-name" name="first-name" value="Алина">
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <label for="last-name" class="form-label">Фамилия</label>
+                                            <input type="text" class="form-control" id="last-name" name="last-name" value="Петрова">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="address" class="form-label">Адрес</label>
+                                            <input type="text" class="form-control" id="address" name="address" value="">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="phone" class="form-label">Телефон</label>
+                                            <input type="tel" class="form-control" id="phone" name="phone" value="+359888222222">
+                                        </div>
+                                        <div class="col-12 mt-4 text-center text-md-start">
+                                            <button type="submit" class="btn btn-login">Запази промените</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-pet" role="tabpanel" aria-labelledby="v-pills-pet-tab" tabindex="0">
+                                <form class="c-form">
+                                    <div class="row px-3 gy-3">
+                                        <span class="fw-bold px-3 text-center text-md-start">ДАННИ ЗА ВАШИЯ ЛЮБИМЕЦ</span>
+                                        <hr class="mb-4">
+                                        <div class="col-12 col-md-6">
+                                            <label for="pet-name" class="form-label">Име на любимеца</label>
+                                            <input type="text" class="form-control" id="pet-name" name="pet-name" placeholder="Въведете името на вашия любимец" required>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <label for="pet-type" class="form-label">Вид животно</label>
+                                            <select class="form-select" id="pet-type" name="pet-type" required>
+                                                <option value="dog">Куче</option>
+                                                <option value="cat">Котка</option>
+                                                <option value="other">Друго</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <label for="pet-breed" class="form-label">Порода</label>
+                                            <input type="text" class="form-control" id="pet-breed" name="pet-breed" placeholder="Въведете породата" required>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <label for="pet-age" class="form-label">Възраст</label>
+                                            <input type="number" class="form-control" id="pet-age" name="pet-age" placeholder="Въведете възраст в години" min="0" max="50" required>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <label for="pet-weight" class="form-label">Тегло (кг)</label>
+                                            <input type="number" class="form-control" id="pet-weight" name="pet-weight" placeholder="Въведете теглото" step="0.1" min="0" required>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <label for="pet-photo" class="form-label">Снимка на любимеца</label>
+                                            <input type="file" class="form-control" id="pet-photo" name="pet-photo" accept="image/*">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="pet-notes" class="form-label">Допълнителна информация</label>
+                                            <textarea class="form-control" id="pet-notes" name="pet-notes" rows="3" placeholder="Добавете бележки или специални изисквания"></textarea>
+                                        </div>
+                                        <div class="col-12 mt-4 text-center text-md-start">
+                                            <button type="submit" class="btn btn-login">Запази промените</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-security" role="tabpanel" aria-labelledby="v-pills-security-tab" tabindex="0">
+                                <div class="row px-3 gx-4">
+                                    <span class="fw-bold px-3 pb-3 text-center text-md-start">НАСТРОЙКИ ЗА СИГУРНОСТ</span>
+                                    <hr class="pb-4">
+                                    <form class="c-form">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6">
+                                                <div class="fw-bold mb-3">Промяна парола:</div>
+                                                <div class="mb-3">
+                                                    <label for="current-password" class="form-label">Текуща парола</label>
+                                                    <input type="password" class="form-control" id="current-password" name="current-password" placeholder="Въведете текущата си парола">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="new-password" class="form-label">Нова парола</label>
+                                                    <input type="password" class="form-control" id="new-password" name="new-password" placeholder="Въведете новата си парола">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="confirm-password" class="form-label">Повтори парола</label>
+                                                    <input type="password" class="form-control" id="confirm-password" name="confirm-password" placeholder="Повторете новата си парола">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="fw-bold mb-3">Промяна на емейл:</div>
+                                                <div class="mb-3">
+                                                    <label for="email" class="form-label">Електронна поща</label>
+                                                    <input type="email" class="form-control" id="email" name="email" placeholder="Въведете новата си електронна поща" value="user@example.com">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-center text-md-start">
+                                            <button type="submit" class="btn btn-login mt-4">Запази промените</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane fade" id="v-pills-billing" role="tabpanel" aria-labelledby="v-pills-billing-tab" tabindex="0">
+                                <form class="c-form">
+                                    <div class="row px-3 gx-4">
+                                        <span class="fw-bold px-3 pb-3 text-center text-md-start">ДАННИ ЗА ПЛАЩАНЕ</span>
+                                        <hr class="mb-4">
+                                        <div class="col-12 col-md-7">
+                                            <div class="card shadow-sm my-4">
+                                                <div class="card-body">
+                                                    <div class="mb-3">
+                                                        <label for="card-number-1" class="form-label">Номер на карта</label>
+                                                        <input type="text" class="form-control" id="card-number-1" name="card-number-1" placeholder="XXXX XXXX XXXX XXXX" value="1234 5678 9012 3456">
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12 col-xl-6">
+                                                            <div class="mb-3">
+                                                                <label for="expiry-date-1" class="form-label">Дата на изтичане</label>
+                                                                <input type="text" class="form-control" id="expiry-date-1" name="expiry-date-1" placeholder="MM/YY" value="12/24">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-xl-6">
+                                                            <div class="mb-3">
+                                                                <label for="cvv-1" class="form-label">CVV</label>
+                                                                <input type="text" class="form-control" id="cvv-1" name="cvv-1" placeholder="XXX" value="123">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="text-center text-md-start">
+                                                <button type="button" class="btn btn-login mt-3">Запази карта</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Затвори"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-12 mb-3">
+                                        <div class="text-center ">
+                                            <h4><b>Вход</b></h4>
+                                            <hr class="border-secondary">
+                                        </div>
+                                    </div>
+                                </div>
+                                <form class="c-form">
+                                    <div class="row">
+                                        <div class="col-12 mb-2">
+                                            <label for="email" class="form-label">Имейл адрес</label>
+                                            <input type="email" class="form-control" name="email" id="email" placeholder="Вашият имейл" required>
+                                        </div>
+                                        <div class="col-12 mb-2">
+                                                <label for="password" class="form-label">Парола</label>
+                                                <input type="password" class="form-control" name="password" id="password" value="" placeholder="Вашата парола" required>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-check mb-4">
+                                                <input class="form-check-input" type="checkbox" value="" name="remember_me" id="remember_me">
+                                                <label class="form-check-label text-secondary" for="remember_me">
+                                                    Запомни парола
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="d-grid">
+                                                <button class="btn btn-login w-100" type="submit">Влез</button>
+                                            </div>
+                                        </div>
+                                        <hr class="border-secondary my-4">
+                                    </div>
+                                </form>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="d-flex gap-2 flex-column">
+                                            <a class="btn btn-light border border-secondary" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48">    
+                                                    <path fill="#4285F4" d="M24 9.5c3.14 0 5.77 1.22 7.75 3.2l5.79-5.79C33.18 3.11 28.89 1.5 24 1.5 14.06 1.5 5.85 7.99 3.14 16.49l6.77 5.25C11.46 14.71 17.19 9.5 24 9.5z"/>
+                                                    <path fill="#34A853" d="M47.84 24.5c0-1.63-.15-3.22-.43-4.75H24v9h13.55c-.58 3-2.3 5.54-4.82 7.24l7.44 5.75C44.55 38.01 47.84 31.81 47.84 24.5z"/>
+                                                    <path fill="#FBBC05" d="M10.2 28.74a14.9 14.9 0 0 1 0-9.47L3.42 14c-2.91 5.63-2.91 12.39 0 18.02l6.78-5.28z"/>
+                                                    <path fill="#EA4335" d="M24 47.5c5.89 0 10.82-1.96 14.43-5.31l-7.44-5.75c-2.06 1.39-4.7 2.21-7.56 2.21-6.81 0-12.54-5.2-13.65-11.99l-6.78 5.28C8.14 41.01 15.94 47.5 24 47.5z"/>
+                                                    <path fill="none" d="M0 0h48v48H0z"/>
+                                                </svg>
+                                                <span class="ms-2">Вилзане с Google</span>
+                                            </a>
+                                            <a class="btn btn-primary" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                                </svg>
+                                                <span class="ms-2">Влизане с Facebook</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-5">
+                                    <div class="col-12">
+                                        <div class="d-flex gap-2 gap-md-4 flex-column flex-md-row justify-content-md-center">
+                                            <a class="text-secondary" href="#">Нямате акаунт? Регистрирайте се!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Затвори"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-12 mb-3">
+                                        <div class="text-center ">
+                                            <h4><b>Вход</b></h4>
+                                            <hr class="border-secondary">
+                                        </div>
+                                    </div>
+                                </div>
+                                <form>
+                                    <div class="row">
+                                        <div class="col-12 mb-2">
+                                            <label for="email" class="form-label">Имейл адрес</label>
+                                            <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" required>
+                                            <!-- </div> -->
+                                        </div>
+                                        <div class="col-12 mb-2">
+                                                <label for="password" class="form-label">Парола</label>
+                                                <input type="password" class="form-control" name="password" id="password" value="" placeholder="Password" required>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-check mb-4">
+                                                <input class="form-check-input" type="checkbox" value="" name="remember_me" id="remember_me">
+                                                <label class="form-check-label text-secondary" for="remember_me">
+                                                    Запомни парола
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="d-grid">
+                                                <button class="btn btn-login w-100" type="submit">Влез</button>
+                                            </div>
+                                        </div>
+                                        <hr class="border-secondary my-4">
+                                    </div>
+                                </form>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="d-flex gap-2 flex-column">
+                                            <a class="btn btn-light border border-secondary" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48">    
+                                                    <path fill="#4285F4" d="M24 9.5c3.14 0 5.77 1.22 7.75 3.2l5.79-5.79C33.18 3.11 28.89 1.5 24 1.5 14.06 1.5 5.85 7.99 3.14 16.49l6.77 5.25C11.46 14.71 17.19 9.5 24 9.5z"/>
+                                                    <path fill="#34A853" d="M47.84 24.5c0-1.63-.15-3.22-.43-4.75H24v9h13.55c-.58 3-2.3 5.54-4.82 7.24l7.44 5.75C44.55 38.01 47.84 31.81 47.84 24.5z"/>
+                                                    <path fill="#FBBC05" d="M10.2 28.74a14.9 14.9 0 0 1 0-9.47L3.42 14c-2.91 5.63-2.91 12.39 0 18.02l6.78-5.28z"/>
+                                                    <path fill="#EA4335" d="M24 47.5c5.89 0 10.82-1.96 14.43-5.31l-7.44-5.75c-2.06 1.39-4.7 2.21-7.56 2.21-6.81 0-12.54-5.2-13.65-11.99l-6.78 5.28C8.14 41.01 15.94 47.5 24 47.5z"/>
+                                                    <path fill="none" d="M0 0h48v48H0z"/>
+                                                </svg>
+                                                <span class="ms-2">Вилзане с Google</span>
+                                            </a>
+                                            <a class="btn btn-primary" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                                </svg>
+                                                <span class="ms-2">Влизане с Facebook</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-5">
+                                    <div class="col-12 text-center">
+                                        <a class="text-secondary" href="#">Нямате акаунт? Регистрирайте се!</a>
+                                        <!-- </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-4 mt-5 c-bg">
+        <div class="container text-center">
+            <div class="d-flex justify-content-center align-items-center gap-3 py-3">
+                <a href="https://www.facebook.com" target="_blank" class="social fs-3">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="social fs-3">
+                     <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="social fs-3">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" class="social fs-3">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="row text-center">
+                <div class="col-12">
+                    <p class="">бул. Осми приморски полк 264, 9000, Варна, България</p>
+                </div>
+                <div class="col-12">
+                    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-4">
+                        <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-phone fs-5 pe-2"></i>
+                            <span>+359898123456</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-envelope fs-4 pe-2"></i>
+                            <span>petgrooming@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="images/logo2.png" class="img-fluid mt-3" style="width: 150px;" alt="logo">
+        </div>
+    </footer>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
